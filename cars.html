@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Cars - AutoTrust Cars</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cars.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">AutoTrust Cars</div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="cars.html" class="active">Cars</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="cars-page">
+        <section class="search-section">
+            <div class="container">
+                <div class="search-filters">
+                    <input type="text" placeholder="Search by Model Name" id="searchInput" class="search-input">
+                    <select id="brandFilter" class="filter-select">
+                        <option value="">All Brands</option>
+                        <option value="honda">Honda</option>
+                        <option value="hyundai">Hyundai</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="maruti">Maruti</option>
+                    </select>
+                    <select id="fuelFilter" class="filter-select">
+                        <option value="">Fuel Type</option>
+                        <option value="petrol">Petrol</option>
+                        <option value="diesel">Diesel</option>
+                        <option value="electric">Electric</option>
+                    </select>
+                    <select id="priceFilter" class="filter-select">
+                        <option value="">Price Range</option>
+                        <option value="0-500000">Under ₹5 Lakhs</option>
+                        <option value="500000-1000000">₹5-10 Lakhs</option>
+                        <option value="1000000-1500000">₹10-15 Lakhs</option>
+                        <option value="1500000+">Above ₹15 Lakhs</option>
+                    </select>
+                    <select id="sortFilter" class="filter-select">
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="recent">Recent Listings</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-car">
+            <div class="container">
+                <h2>Featured Car of the Month</h2>
+                <div class="featured-car-card">
+                    <img src="https://source.unsplash.com/featured/?luxury,car" alt="Featured Car">
+                    <div class="featured-car-details">
+                        <h3>2021 Toyota Fortuner 4x4</h3>
+                        <div class="specs">
+                            <span>₹32,50,000</span>
+                            <span>15,000 KM</span>
+                            <span>Diesel</span>
+                            <span>Automatic</span>
+                        </div>
+                        <p>Top variant with all premium features. Single owner, regularly serviced at authorized center.</p>
+                        <a href="contact.html" class="cta-button">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="car-listings">
+            <div class="container">
+                <h2>Available Cars</h2>
+                <div class="car-grid" id="carGrid">
+                    <!-- Car cards will be populated via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section class="sell-car-cta">
+            <div class="container">
+                <div class="sell-car-content">
+                    <h2>Have a Car to Sell?</h2>
+                    <p>Get the best value for your car with our hassle-free selling process</p>
+                    <button class="cta-button" onclick="window.location.href='contact.html'">Submit Car Details</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="cars.html">Cars</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Chennai, Tamil Nadu</p>
+                    <p>support@autotrustcars.in</p>
+                    <p>+91-98765-43210</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">IN</a>
+                        <a href="#" class="social-icon">TW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoTrust Cars. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cars.js"></script>
+</body>
+</html>
